@@ -1,8 +1,8 @@
 # Username
-*natas1
+natas1
 
 # Password
-*0nzCigAq7t2iALyvU9xcHlYN4MlkIwlq
+0nzCigAq7t2iALyvU9xcHlYN4MlkIwlq
 
 # Web vulnerability
 Sensitive data disclosure in app HTTP source code
