@@ -1,4 +1,8 @@
 # Target
-10.2.255.233
+staticIP
 
 # Web Vulnerbilities
+
+
+# Method of Solve
+
