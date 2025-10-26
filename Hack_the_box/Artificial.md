@@ -1,7 +1,7 @@
 # Attack IP 
 10.10.11.74
 
-# Dificulty
+# Difficulty
 Community rating - Easy
 
 # Category
