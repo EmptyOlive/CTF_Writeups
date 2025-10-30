@@ -14,7 +14,9 @@ The capture contains plaintext credentials and can be used to gain foothold. A L
 # Method of Solve
 
 Nmap scan 
-""""
+
+'''
+
 PORT   STATE SERVICE VERSION
 21/tcp open  ftp     vsftpd 3.0.3
 22/tcp open  ssh     OpenSSH 8.2p1 Ubuntu 4ubuntu0.2 (Ubuntu Linux; protocol 2.0)
@@ -26,7 +28,8 @@ PORT   STATE SERVICE VERSION
 |_http-title: Security Dashboard
 |_http-server-header: gunicorn
 Service Info: OSs: Unix, Linux; CPE: cpe:/o:linux:linux_kernel
-"""
+
+'''
 Task 1: How many TCP ports are open?
 Answer: <span style="background-color:black; color:black;" onmouseover="this.style.color='white'" onmouseout="this.style.color='black'">
   3
@@ -48,10 +51,10 @@ Task 4: What is the ID of the PCAP file that contains sensative data?
 Answer: 0 
 
 Using this sensitive data we start to look through, and see 
-"""
+'''
 No.     Time           Source                Destination           Protocol Length Info
      40 5.424998       192.168.196.1         192.168.196.16        FTP      78     Request: PASS Buck3tH4TF0RM3!
-"""
+'''
 Task 5: Which application layer protocol in the pcap file can the sensetive data be found in?
 Answer: FTP
 
