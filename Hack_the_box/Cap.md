@@ -30,9 +30,11 @@ PORT   STATE SERVICE VERSION
 Service Info: OSs: Unix, Linux; CPE: cpe:/o:linux:linux_kernel
 
 ```
-Task 1: How many TCP ports are open?
-Answer: <span style="background-color:black; color:black; border-radius:2px; padding:0 4px; transition:color 0.3s;" onmouseover="this.style.color='white'" onmouseout="this.style.color='black'">
-3{super_secret_answer}</span>
+Task 1: How many TCP ports are open?  
+Answer: <span style="background-color:#000000; color:#000000; padding:0 4px; border-radius:3px;">
+3{super_secret_answer}
+</span>
+
 
 
 Heading to website we see the security dashboard, using the guide from the second task we head to Security Snapshot
