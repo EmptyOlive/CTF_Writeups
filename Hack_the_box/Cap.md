@@ -31,9 +31,7 @@ Service Info: OSs: Unix, Linux; CPE: cpe:/o:linux:linux_kernel
 
 ```
 Task 1: How many TCP ports are open?
-Answer: <span style="background-color:black; color:black;" onmouseover="this.style.color='white'" onmouseout="this.style.color='black'">
-  3
-</span>
+Answer: <span style="background-color:black; color:black;" onmouseover="this.style.color='white'" onmouseout="this.style.color='black'"> 3 </span>
 
 Heading to website we see the security dashboard, using the guide from the second task we head to Security Snapshot
 
