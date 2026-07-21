@@ -28,4 +28,11 @@ Answer - NSt8bHTg.zip
 Answer - 2024-06-30 08:03
 
 7. The attacker tampered with a text file that contained the credentials of the admin user of the webserver. What new username and password did the attacker write in the file?
+ Answer - a1l4m:youarecompromised
+<img width="1849" height="707" alt="image" src="https://github.com/user-attachments/assets/5ff7b34b-8a02-47e4-a682-7977f697a5d5" />
 
+8. What is the MITRE Technique ID for the attacker's action in the previous question (Q7) when tampering with the text file?
+    Answer - Data Manipulation: Stored Data Manipulation T1565.001
+9. The attacker tried to escape from the container but he didn’t succeed, What is the command that he used for that?
+    Answer - docker run --rm -it -v /:/host ubuntu chroot /host
+   <img width="1750" height="611" alt="image" src="https://github.com/user-attachments/assets/1ef407be-c3cb-41e2-853f-1a39bf587024" />
