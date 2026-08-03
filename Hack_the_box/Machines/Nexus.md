@@ -46,6 +46,11 @@ git.nexus.htb Status: 200 [Size: 14474]
 ```
 going to git.nexus.htb and look around we find the docker compose file and the db username and password being N27xh!!2ucY04
 
+from here we try the username and password to no avail. pivoting to billing subdomain, we try j.matthew@nexus.htb with password N27xh!!2ucY04 to give us access.
+
+
+
+
 
 
 
@@ -65,4 +70,4 @@ Answer - git
 
 **Task 4**
 What is the DB_PASSWORD discovered while enumerating the exposed repository?
-Answer - 
+Answer - N27xh!!2ucY04
