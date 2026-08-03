@@ -1,5 +1,4 @@
-<img width="1612" height="698" alt="image" src="https://github.com/user-attachments/assets/cc1c8b29-4d89-4cf6-88d7-ab22bc114b82" />
-<img width="800" height="800" alt="image" src="https://github.com/user-attachments/assets/f91b4ce1-c35f-495e-bd3b-3fbc2102e3d3" />
+<img width="400" height="400" alt="image" src="https://github.com/user-attachments/assets/f91b4ce1-c35f-495e-bd3b-3fbc2102e3d3" />
 
 
 # Synopsis 
@@ -113,6 +112,15 @@ After a web search there seems to be no foothold vulnerabilities for the IIS. So
 |     $SYS/brokers/client_status/mqttui-ebd828dd: {"status":"offline", "username":"(null)","ts":1785528480906,"reason_code":"0","client_id":"mqttui-ebd828dd","IPv4":"127.0.0.1"}                                                          
 |_    $SYS/brokers/client_status/mqttui-e04f6faa: {"status":"offline", "username":"(null)","ts":1785528478473,"reason_code":"0","client_id":"mqttui-e04f6faa","IPv4":"127.0.0.1"}
 ```
+From here using 
+```
+curl -LO https://github.com/EdJoPaTo/mqttui/releases/download/v0.23.0/mqttui-v0.23.0-x86_64-unknown-linux-gnu.deb
+sudo apt install ./mqttui-v0.23.0-x86_64-unknown-linux-gnu.deb
+```
+We download a interface to read mqtt services available.
+<img width="1815" height="522" alt="image" src="https://github.com/user-attachments/assets/fbbd80d1-9f0a-4fd0-ab54-b074aec9f2d2" />
+
+
 
 
 
