@@ -44,5 +44,13 @@ Answer - 2026-04-08 11:37:07
 Solver - Found in the AppLaunch information. as shown from the photos this is the collection, exfiltration and cleaning
 <img width="1671" height="450" alt="image" src="https://github.com/user-attachments/assets/a88f6a72-cd03-42b9-9f9c-5a0a20614a9c" />]
 
-6. Performing temporal proximity analysis, how many seconds did the attacker take to conclude data collection before potentially exfiltrating it?
-Answer - 
+Task 6
+Performing temporal proximity analysis, how many seconds did the attacker take to conclude data collection before potentially exfiltrating it?
+
+175.443
+
+Task 7
+Evidence shows that a Windows Terminal shell was executed shortly after data collection, and it is strongly possible that the attacker used the data exfiltration utility via the command line. Following this, a tool was used on the system to permanently delete files and leave no traces of the downloaded unauthorized tools. What is the full path of this utility?
+
+C:\Program Files\Eraser\Eraser.exe
+
